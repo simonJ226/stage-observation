@@ -1,0 +1,45 @@
+<head>
+    <style type="text/css">
+        .droite {
+            margin-left:100px;
+            background-color: #d8da3d
+        }
+        #special {
+            color:red;
+        }
+    </style>
+</head>
+
+<body style="background-color: aquamarine">
+    <p style="color:blue">
+        Coucou Simon !
+    </p>
+    <div class="droite">
+        On est dans une div droite
+    </div>
+    <div class="droite">
+        On est dans une div droite aussi    
+    </div>
+    <div id="special" class="droite">
+        une div qui n'est pas droite
+        <div>une div enfant</div>
+    </div>
+    <b>
+        balise bold
+    </b>
+    <a href="https://www.google.fr">Ceci est mon lien</a>
+
+
+    <script>
+            alert('popup de merde');
+            var myDiv = document.getElementById('special');
+            myDiv.onmouseover = function () {
+                console.log('mouseover');
+                myDiv.style.backgroundColor = "yellow";
+            }
+            myDiv.onmouseleave = function () {
+                console.log('mouseover');
+                myDiv.style.backgroundColor = "#d8da3d";
+            }
+        </script>
+</body>
